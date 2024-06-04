@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "TecHelp-FronEnd",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

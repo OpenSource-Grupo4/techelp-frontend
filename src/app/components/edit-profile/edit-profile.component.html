@@ -1,0 +1,62 @@
+<h1 class="title"><mat-icon>build</mat-icon>Edit Profile</h1>
+
+
+<form [formGroup]="formEdit" (ngSubmit)="updateProfile()">
+  <div class="container">
+    <mat-card class="example-card">
+      <div class="card">
+        <div id="header" class="content" style="display: flex">
+          <div class="tech">
+            <div class="card">
+              <div><mat-card-title class="name"></mat-card-title>
+                <mat-card-subtitle>
+                  <mat-label for="name">Name: </mat-label>
+                  <input matInput type="text" id="name" formControlName="name"> <br>
+                  <mat-label for="lastName">LastName: </mat-label>
+                  <input matInput type="text" id="lastName" formControlName="lastName"><br>
+                  <mat-label for="experience">Experience: </mat-label>
+                  <input matInput type="text" id="experience" formControlName="experience"><br>
+                  <mat-label for="address">Address: </mat-label>
+                  <input matInput type="text" id="address" formControlName="address"><br>
+                  <mat-label for="description">Description: </mat-label>
+                  <textarea matInput id="description" formControlName="description"></textarea><br>
+                  <mat-label for="photo">Photo: </mat-label>
+                  <input matInput type="text" id="photo" formControlName="photo">
+
+
+                </mat-card-subtitle>
+              </div>
+              <div><mat-card-title> </mat-card-title>
+                <mat-label for="description">Consultation price: </mat-label>
+                <input matInput type="text" id="price" formControlName="price">
+              </div>
+            </div>
+
+            <div class="card">
+              <div>
+                <mat-card class="about-tech-card">
+                  <p></p>
+                </mat-card>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="content">
+        </div>
+        <div class="content">
+          <mat-icon class="stars">
+            <ng-template #elseBlock>
+              <div>
+                <span>star</span>
+              </div>
+            </ng-template>
+          </mat-icon>
+        </div>
+      </div>
+    </mat-card>
+    <div class="request">
+      <button mat-raised-button [disabled]="formEdit.invalid">Update Profile</button>
+    </div>
+  </div>
+</form>

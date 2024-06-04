@@ -1,0 +1,44 @@
+.dashboard{
+  display: flex;
+}
+
+.inventory {
+  position: relative;
+  padding: 50px 20px;
+  background-color: #72B4EF;
+  border: 2px solid #000;
+}
+
+.items{
+  display: flex;
+  padding-left: 20px;
+}
+
+.column{
+  padding-right: 20px;
+}
+
+.graph {
+  width: 500px;
+  padding: 50px 100px;
+  background-color: #72B4EF;
+  border: 2px solid #000;
+}
+
+.inventory,.graph  {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.edit {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.title{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+

@@ -1,0 +1,72 @@
+<h2>{{editMode ? 'Edit Task' : 'Add Task'}}</h2>
+
+<div class="form-section">
+    <form (submit)="onSubmit()" #taskForm='ngForm' class="form-row">
+        <mat-grid-list cols="2" rowHeight="70px">
+
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-form-field class="container">
+                    <mat-label >
+                        Client's Name
+                    </mat-label>
+                    <input matInput placeholder="Client's name"  name="client_name" required [(ngModel)]="task.client_name">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="7" [style.background]="'lightblue'">
+                <mat-progress-spinner [diameter]="300" [value]="task.value_progress"  mode="determinate"></mat-progress-spinner>
+                <mat-form-field class="input-field">
+                    <mat-label>Write Value (Max. 100)</mat-label>
+                    <input matInput type="number"  placeholder="Write Value" max="100" min="0" name="value_progress" required [(ngModel)]="task.value_progress">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                <mat-form-field class="container">
+                    <mat-label >
+                        Cellphone's name
+                    </mat-label>
+                    <input matInput placeholder="Cellphone's name" name="phone_name" required [(ngModel)]="task.phone_name">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                <mat-form-field class="container" >
+                    <mat-label >
+                        Problem
+                    </mat-label>
+                    <input matInput placeholder="Problem"  required [(ngModel)]="task.problem" name="problem">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                <mat-form-field >
+                    <mat-label >Components</mat-label>
+                    <input matInput placeholder="Components" name="components_to_use" required [(ngModel)]="task.components_to_use">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                <mat-form-field class="container" >
+                    <mat-label>
+                        Delivery Date
+                    </mat-label>
+                    <input matInput type="date" placeholder="Delivery Day" name="delivery_day" required [(ngModel)]="task.delivery_day">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                <mat-form-field class="container">
+                    <mat-label >
+                        Income
+                    </mat-label>
+                    <input matInput  placeholder="Income" name="income" required [(ngModel)]="task.income">
+                </mat-form-field>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <ng-container  *ngIf="editMode; else elseTemplate">
+            <button mat-raised-button color="primary">Update</button>
+            <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+
+        </ng-container>
+
+        <ng-template #elseTemplate>
+            <button mat-raised-button color="primary">Add</button>
+        </ng-template>
+
+    </form>
+</div>

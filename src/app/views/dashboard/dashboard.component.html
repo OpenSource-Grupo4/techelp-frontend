@@ -1,0 +1,28 @@
+<h2 class="title"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="dashboard"></mat-icon>Dashboard</h2><br>
+<div class="dashboard">
+
+    <div class="inventory">
+      <h2><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="work"></mat-icon>Inventory</h2>
+    <div class="items">
+      <div class = "column">
+        <h2>Components</h2>
+        <p *ngFor="let item of items">
+          {{item.item}}
+        </p>
+      </div>
+      <div class = "column">
+        <h2>Amount</h2>
+        <p *ngFor="let item of items">
+          {{item.amount}}
+        </p>
+      </div>
+    </div>
+      <mat-icon class="edit" [routerLink]="['/dashboard/inventory']">edit</mat-icon>
+    </div>
+  <div class="graph">
+    <h2><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="pie_chart"></mat-icon>Analytics</h2>
+    <app-chart [routerLink]="['/dashboard/analytics']"  ></app-chart>
+  </div>
+</div>
+
+

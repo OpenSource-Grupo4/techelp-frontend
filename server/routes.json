@@ -1,0 +1,6 @@
+{
+  "/api/v1/*" : "/$1",
+  "/home/:type": "/home?type=:type",
+  "/home/technicals/:technicals" :"/home?technicals_like=:technicals"
+
+}

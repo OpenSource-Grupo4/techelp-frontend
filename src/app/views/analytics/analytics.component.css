@@ -1,0 +1,23 @@
+.statistics{
+  display: flex;
+}
+
+.analytics{
+  padding: 1%;
+  margin: 20px;
+  background-color: #72B4EF;
+}
+
+.line{
+  margin:20px;
+  width: 70%;
+  height: 70%;
+}
+
+.data {
+  padding: 2%;
+}
+
+.title {
+  padding: 1% 2%;
+}

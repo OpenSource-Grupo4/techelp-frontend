@@ -1,0 +1,87 @@
+p {
+  font-family: Roboto, serif;
+  font-size: 20px ;
+}
+h1 {
+  font-size: 25PX;
+  font-family: Montserrat, "Arial Black", serif;
+
+}
+
+
+.card-membership {
+  /*Bordes*/
+  background-color: #72B4EF;
+  border-style: solid;
+  border-color: #448AFF;
+  border-width: medium;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px #448AFF;
+
+  /*Centrar-Contenedor*/
+
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: 20px;
+
+  /*Tamaño*/
+  width: 450px;
+  height: auto;
+
+
+
+
+}
+.cards-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Btn-Aceptar{
+  /*Bordes*/
+  background-color: #448AFF;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  /*Centrar*/
+  margin: auto;
+  /*Texto*/
+  font-size: medium;
+
+}
+
+.title-pag{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.mat-icon-custom-size {
+  font-size: 30px;
+}
+
+.car-title {
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.car-title h2 {
+  font-size: 35px;
+  font-family: Montserrat, "Arial Black", serif;
+
+}
+.p-card {
+  font-family: Montserrat, serif;
+  font-size: 22px;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons mat-icon {
+  height: 60px;
+  width: 60px;
+  font-size: 60px;
+}

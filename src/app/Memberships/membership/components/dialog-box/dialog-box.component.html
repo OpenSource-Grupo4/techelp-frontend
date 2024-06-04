@@ -1,0 +1,64 @@
+<h1 mat-dialog-title>
+  <mat-icon aria-hidden="true">credit_card</mat-icon>
+  Debit Card</h1>
+<div mat-dialog-content >
+    <form [formGroup]="myForm" (ngSubmit)="Onsave()"  autocomplete="off">
+        <mat-form-field>
+            <mat-label>Number Card</mat-label>
+            <input type="text"
+                   matInput
+                   placeholder="Number Card"
+                   formControlName="Number_Card">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input type="text"
+                   matInput
+                   placeholder="Name"
+                   formControlName="Name">
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input type="text"
+                   matInput
+                   placeholder="Last Name"
+                   formControlName="Last_Name">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input type="text"
+                   matInput
+                   placeholder="Email"
+                   formControlName="Email">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Date V.</mat-label>
+            <input type="text"
+                   matInput
+                   placeholder="Date"
+                   formControlName="Date">
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field>
+            <mat-label>CVV</mat-label>
+            <input type="text"
+                   matInput
+                   placeholder="Cvv"
+                   formControlName="Cvv">
+        </mat-form-field>
+        <br>
+        <button type="submit" mat-button mat-flat-button mat-dialog-close color="primary" >
+            <span >Ok</span></button>
+        &nbsp;
+        <button mat-flat-button mat-dialog-close cdkFocusInitial color="primary">
+            Cancel</button>
+
+
+
+    </form>
+</div>
+

@@ -1,0 +1,7 @@
+<app-navigation *ngIf="showNavbar" [type] = user>
+  <router-outlet></router-outlet>
+</app-navigation>
+<router-outlet *ngIf="!showNavbar"></router-outlet>
+
+
+

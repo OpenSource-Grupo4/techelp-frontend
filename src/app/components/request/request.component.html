@@ -1,0 +1,46 @@
+<h3>Request</h3>
+  <form [formGroup]="formrequest" (submit)="send()">
+    <div>
+      <label class="name" for="name">Name </label><br>
+      <input type="text"  placeholder="please enter a name" id="name" formControlName="name">
+      </div>
+    <div>
+      <label for="number">Number</label><br>
+      <input type="text" id="number" formControlName="number">
+    </div>
+    <div>
+      <label for="day">Date</label><br>
+      <input type="date" id="day" formControlName="day">
+    </div>
+    <div><label for="hour">Hour</label><br>
+    <input type="time" id="hour" formControlName="hour">
+
+    </div>
+    <div>
+    <label for="cellphone">Cellphone</label><br>
+    <input type="text" id="cellphone" formControlName="cellphone">
+    </div>
+    <div class>
+      <label for="Problem">Problem</label><br>
+      <select class="form-select form-select-sm" id="Problem" formControlName="Problem" >
+      <option value="battery">battery</option>>
+      <option value="screen">screen</option>>
+      <option value="virus">virus</option>>
+      <option value="other">other</option>>
+      </select>
+
+    </div>
+    <div>
+      <div>
+        <label for="Specification">Specification</label><br>
+        <textarea  class="form-control" type="text" id="Specification"  rows="4" formControlName="Specification" ></textarea>
+      </div><br>
+      <div class="a">
+        <button [routerLink]="'/home'" [disabled]="formrequest.invalid" >Send Request</button>
+      </div>
+    </div>
+  </form>
+
+
+
+

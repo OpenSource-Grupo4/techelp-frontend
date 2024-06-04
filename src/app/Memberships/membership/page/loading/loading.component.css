@@ -1,0 +1,28 @@
+.title-pag{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.ctn-loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.btn-go{
+  background-color: #448AFF;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px;
+
+  font-family: Montserrat, Roboto, serif;
+  font-size: 22px;
+}
+.ctn-loading img {
+  height: 150px;
+  width: auto;
+}
+.ctn-loading h1 {
+  font-family: Montserrat, "Arial Black", serif;
+}

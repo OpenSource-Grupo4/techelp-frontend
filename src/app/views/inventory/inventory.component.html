@@ -1,0 +1,30 @@
+<h2 class = "title"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="work"></mat-icon>Inventory</h2>
+<div class="example-container">
+    <form (submit)="onSubmit()">
+        <div class="columns">
+          <h2>Components</h2>
+          <h2>Amount</h2>
+          <h2>PRICE X1und</h2>
+        </div>
+        <div class="form">
+        <div *ngFor="let itm of items; let i = index">
+            <mat-form-field>
+                <input matInput name="sdf" [value]="itm.item" (input)="updateItemValue($event, item.item, i)">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" name="amount" [value]="itm.amount.toString()" (input)="updateAmountValue($event, item.amount, i)" >
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" name="price" [value]="itm.price.toString()" (input)="updatePriceValue($event, item.price, i)">
+            </mat-form-field>
+        </div>
+        </div>
+      <div class="add">
+        <mat-icon (click)="onAdd()">add_circle_outline</mat-icon>
+
+      </div>
+        <div  class="save" >
+        <button class="save-button" type="submit">Save</button>
+        </div>
+    </form>
+</div>

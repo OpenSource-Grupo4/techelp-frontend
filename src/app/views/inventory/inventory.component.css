@@ -1,0 +1,53 @@
+.columns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form{
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+mat-form-field{
+  padding: 20px 70px;
+}
+
+h2{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.example-container{
+  position: relative;
+  margin:  0 50px;
+  padding: 100px;
+  background-color: #72B4EF;
+}
+
+.add{
+  position: relative;
+  left: 50%;
+  right: 50%;
+}
+
+.save {
+  padding: 20px 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.title{
+  padding-top: 10px;
+  padding-left: 60px;
+}
+
+.save-button{
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: #1E88E5;
+  color: black;
+}

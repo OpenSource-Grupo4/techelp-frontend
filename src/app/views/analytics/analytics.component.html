@@ -1,0 +1,18 @@
+<h2 class="title"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="dashboard"></mat-icon>Dashboard</h2>
+<div class="analytics">
+  <h2><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="pie_chart"></mat-icon>Analytics</h2>
+  <div class="statistics">
+    <div class="line" [chart]="lineChart"></div>
+    <div class="data">
+      <h2>Income:</h2>
+      <h2>In the weekend {{weekend}}, you got</h2>
+      <h2>S/{{income}}</h2>
+      <h2>In the weekend {{weekend}}, you wasted</h2>
+      <h2>S/{{outlay}}</h2>
+      <h2>Your total earnings were</h2>
+      <h2>S/{{earning}}</h2>
+    </div>
+  </div>
+</div>
+
+

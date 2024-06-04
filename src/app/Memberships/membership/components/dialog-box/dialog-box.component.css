@@ -1,0 +1,13 @@
+h1 {
+  font-size: 50PX;
+  font-family: Montserrat, "Arial Black", serif;
+}
+
+.Complete-Name {
+  display: flex;
+  justify-content: space-between;
+}
+.Data-Card {
+  display: flex;
+  justify-content: space-between;
+}

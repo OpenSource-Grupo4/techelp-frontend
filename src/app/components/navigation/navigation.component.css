@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  text-align: center;
+  background-color: #448AFF;
+
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  background-color: #448AFF;
+
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #72B4EF;
+
+}
+
+.sidenav .mat-nav-list {
+  margin-top: 460px;
+}
+
+.sidenav .menu {
+  margin-top: 20px;
+}
+
+span.mdc-list-item__content{
+  text-align: left;
+}

@@ -1,0 +1,147 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "gonzalo@techelp.com",
+      "password": "gonzalo",
+      "type": "client"
+    },
+    {
+      "id": 2,
+      "email": "juan@techelp.com",
+      "password": "juan",
+      "type": "client"
+    },
+    {
+      "id": 3,
+      "email": "pedro@techelp.com",
+      "password": "pedro",
+      "type": "client"
+    },
+    {
+      "id": 4,
+      "email": "alonso@techelp.com",
+      "password": "alonso",
+      "type": "technical"
+    },
+    {
+      "id": 5,
+      "email": "rafael@techelp.com",
+      "password": "rafael",
+      "type": "technical"
+    },
+    {
+      "id": 6,
+      "email": "mariana@techelp.com",
+      "password": "mariana",
+      "type": "technical"
+    }
+  ],
+
+  "technicals": [
+    {
+      "id": 1,
+      "name": "Jose",
+      "lastName": "Perez",
+      "address": "Av. Bananos 456",
+      "city": "Lima",
+      "experience": "4 - 5 years",
+      "photo":"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+      "description": "Soy tecnico desde hace 5 años y tengo un puesto en Surco",
+      "ranking": "3",
+      "favourite": "false"
+    },
+    {
+      "id": 2,
+      "name": "Pablo",
+      "lastName": "Ramirez",
+      "address": "Av. Moreras 789",
+      "city": "Lima",
+      "experience": "1 - 3 years",
+      "photo":"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+      "description": "Soy tecnico desde hace 4 años y tengo un puesto en La Victoria",
+      "ranking": "4",
+      "favourite": "false"
+    },
+    {
+      "id": 3,
+      "name": "Fernando",
+      "lastName": "Lujan Carrion",
+      "address": "Av. Cocos 345",
+      "city": "Lima",
+      "experience": "2 - 4 years",
+      "photo":"https://media.licdn.com/dms/image/C4D03AQHXIzXoZBgYoQ/profile-displayphoto-shrink_800_800/0/1607395689181?e=2147483647&v=beta&t=vNlzJ2k53Q2txzFQ7CE9Sd41Pgyl--iLLGiINe1lGao",
+      "description": "I deliver my costumer devices early",
+      "ranking": "5",
+      "favourite": "false"
+    },
+    {
+      "id": 4,
+      "name": "Marco",
+      "lastName": "Torres",
+      "address": "Av. Manzanos 345",
+      "city": "Lima",
+      "experience": "2 - 4 years",
+      "photo":"https://i.pinimg.com/originals/ae/ec/c2/aeecc22a67dac7987a80ac0724658493.jpg",
+      "description": "I'm new in repairing phones, but I always deliver early'",
+      "ranking": "2",
+      "favourite": "false"
+    }
+  ],
+  "incomes": [
+    {
+      "id": 1,
+      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+    },
+    {
+      "id": 2,
+      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+    },
+    {
+      "id": 3,
+      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+    },
+    {
+      "id": 4,
+      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+    }
+  ],
+  "inventories": [
+    {
+      "id": 1,
+      "technicalId": 1,
+      "items": [
+        {
+          "item": "Screens motoG20",
+          "amount": 10,
+          "price": 20.00
+        },
+        {
+          "item": "Battery Samsung A22",
+          "amount": 2,
+          "price": 45.00
+        },
+        {
+          "item": "Panel Samsung A22",
+          "amount": 5,
+          "price": 30.00
+        }
+      ]
+    }
+  ],
+  "my-profile": [
+    {
+      "id": 1,
+      "name": "Jos",
+      "lastName": "Cueva",
+      "address": "Av. San Juan",
+      "city": "Lima",
+      "experience": "4 - 5 years",
+      "photo": "https://elcomercio.pe/resizer/Fiioo9mqCbjvpsD_5GFUBW3YwP8=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/URN565XOQVC5HGNYPHOSPOZALA.jpg",
+      "description": "Soy tecnico desde hace 5 años",
+      "ranking": "5",
+      "favourite": "false",
+      "price": "50"
+    }
+  ]
+}
