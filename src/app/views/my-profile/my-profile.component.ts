@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MyprofileApiService } from "../../services/myprofile-api.service";
-import { Technical } from "../../models/interfaces";
+import { Technical } from "../../components/edit-profile/models/interfaces";
 import {Router} from "@angular/router";
 
 @Component({
