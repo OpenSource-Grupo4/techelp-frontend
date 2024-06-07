@@ -1,45 +1,60 @@
-<h3>Request</h3>
+<h3>Support</h3>
+<div class="form-container">
   <form [formGroup]="formrequest" (submit)="send()">
     <div>
-      <label class="name" for="name">Name </label><br>
-      <input type="text"  placeholder="please enter a name" id="name" formControlName="name">
-      </div>
-    <div>
-      <label for="number">Number</label><br>
-      <input type="text" id="number" formControlName="number">
+      <mat-form-field class="full-width">
+        <mat-label>Clients Name</mat-label>
+        <input matInput placeholder="Please enter a name" id="name" formControlName="name">
+      </mat-form-field>
     </div>
     <div>
-      <label for="day">Date</label><br>
-      <input type="date" id="day" formControlName="day">
-    </div>
-    <div><label for="hour">Hour</label><br>
-    <input type="time" id="hour" formControlName="hour">
-
+      <mat-form-field class="full-width">
+        <mat-label>Cellphone Number</mat-label>
+        <input matInput type="text" id="number" formControlName="number">
+      </mat-form-field>
     </div>
     <div>
-    <label for="cellphone">Cellphone</label><br>
-    <input type="text" id="cellphone" formControlName="cellphone">
-    </div>
-    <div class>
-      <label for="Problem">Problem</label><br>
-      <select class="form-select form-select-sm" id="Problem" formControlName="Problem" >
-      <option value="battery">battery</option>>
-      <option value="screen">screen</option>>
-      <option value="virus">virus</option>>
-      <option value="other">other</option>>
-      </select>
-
+      <mat-form-field class="full-width">
+        <mat-label>Date</mat-label>
+        <input matInput [matDatepicker]="picker" id="day" formControlName="day">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
     </div>
     <div>
-      <div>
-        <label for="Specification">Specification</label><br>
-        <textarea  class="form-control" type="text" id="Specification"  rows="4" formControlName="Specification" ></textarea>
-      </div><br>
-      <div class="a">
-        <button [routerLink]="'/home'" [disabled]="formrequest.invalid" >Send Request</button>
-      </div>
+      <mat-form-field class="full-width">
+        <mat-label>Hour</mat-label>
+        <input matInput type="time" id="hour" formControlName="hour">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="full-width">
+        <mat-label>Phone Model</mat-label>
+        <input matInput type="text" id="cellphone" formControlName="cellphone">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="full-width">
+        <mat-label>Problem</mat-label>
+        <mat-select id="Problem" formControlName="Problem">
+          <mat-option value="battery">Battery</mat-option>
+          <mat-option value="screen">Screen</mat-option>
+          <mat-option value="virus">Virus</mat-option>
+          <mat-option value="other">Other</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="full-width">
+        <mat-label>Specification</mat-label>
+        <textarea matInput id="Specification" rows="4" formControlName="Specification"></textarea>
+      </mat-form-field>
+    </div>
+    <div class="button-container">
+      <button mat-raised-button color="primary" [routerLink]="'/home'" [disabled]="formrequest.invalid">Send Request</button>
     </div>
   </form>
+</div>
 
 
 
