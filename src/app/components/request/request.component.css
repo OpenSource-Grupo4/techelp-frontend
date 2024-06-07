@@ -1,82 +1,26 @@
-textarea {
-  width: 1200px; /* Adjust the width as desired */
-  height: 40px; /* Adjust the height as desired */
-  font-weight: bold;
-  border-radius: 20px;
-
-}
-input
-{
-  width: 1000px; /* Adjust the width as desired */
-  height: 30px; /* Adjust the height as desired */
-  font-weight: bold;
-  margin-bottom: 20px;
-  border-radius: 20px;
-}
-select
-{
-  width: 1000px;
-  height: 25px; /* Adjust the height as desired */
-  font-weight: bold;
-  margin-bottom: 20px;
-  border-radius: 20px;
-}
-button{
-  background-color: #72B4EF;
-  padding: 10px 20px;
-  border-color: #72B4EF;
-  border-radius: 20px;
-}
-
-body {
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #fff;
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura de la ventana para centrar verticalmente */
 }
 
 form {
-  width:1000px;
-  margin: 0 auto;
-  padding: 50px;
-
-
-}
-
-
-
-label {
-  font-weight: bold;
-
-}
-
-.form-control {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  max-width: 600px; /* Puedes ajustar este valor según tus necesidades */
+  padding: 20px; /* Espaciado interno para estética */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un mejor efecto visual */
+  background-color: #fff; /* Fondo blanco para el formulario */
+  border-radius: 8px; /* Bordes redondeados */
 }
 
-.form-control:focus {
-  outline: none;
-  border-color: #333;
+.full-width {
+  width: 100%;
 }
 
-.form-submit {
-  background-color: #333;
-  color: #fff;
-  font-size: 16px;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Espaciado superior para separar el botón del formulario */
 }
 
-.form-submit:hover {
-  background-color: #222;
-}
-h3{
-  position: absolute;
-  width: 100% ;
-}
