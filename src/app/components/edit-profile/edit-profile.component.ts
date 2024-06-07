@@ -1,8 +1,9 @@
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MyprofileApiService } from "../../services/myprofile-api.service";
-import { Technical } from "../../models/interfaces";
+import { Technical } from "./models/interfaces";
 
 @Component({
   selector: 'app-edit-profile',

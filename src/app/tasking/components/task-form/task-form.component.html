@@ -12,6 +12,7 @@
                     <input matInput placeholder="Client's name"  name="client_name" required [(ngModel)]="task.client_name">
                 </mat-form-field>
             </mat-grid-tile>
+
             <mat-grid-tile [colspan]="1" [rowspan]="7" [style.background]="'lightblue'">
                 <mat-progress-spinner [diameter]="300" [value]="task.value_progress"  mode="determinate"></mat-progress-spinner>
                 <mat-form-field class="input-field">
