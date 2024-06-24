@@ -1,13 +1,14 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
-// import { SearchTechnicalComponent } from './views/search-technical/search-technical.component';
-// import { SideNavToolBarComponent } from './components/side-nav-tool-bar/side-nav-tool-bar.component';
+import { SearchTechnicalComponent } from './views/search-technical/search-technical.component';
+import { SideNavToolBarComponent } from './components/side-nav-tool-bar/side-nav-tool-bar.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {TechnicalsServiceService} from "./services/technicals-service.service";
@@ -20,7 +21,7 @@ import { MatListModule } from '@angular/material/list';
 import { RequestComponent } from './components/request/request.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
-// import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
+import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
 import { HomeComponent } from './components/home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule} from "@angular/material/table";
@@ -44,8 +45,8 @@ import {InventoryServiceService} from "./services/inventoryService/inventory-ser
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { MyProfileComponent } from './views/my-profile/my-profile.component';
 import {MembershipModule} from "./Memberships/membership.module";
-// import { ListTaskComponent } from './monitoring/pages/list-task/list-task.component';
-// import { ViewProgressTaskComponent } from './monitoring/pages/view-progress-task/view-progress-task.component';
+import { ListTaskComponent } from './monitoring/pages/list-task/list-task.component';
+import { ViewProgressTaskComponent } from './monitoring/pages/view-progress-task/view-progress-task.component';
 // import {MonitortasksService} from "./monitoring/services/monitortasks.service";
 import { LoginComponent } from './security/pages/login/login.component';
 import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
@@ -59,20 +60,22 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatProgressBarModule} from "@angular/material/progress-bar";
 import {NgOptimizedImage} from "@angular/common";
-// import {HomeUserComponent} from "./components/home-user/home-user.component";
+import {HomeUserComponent} from "./components/home-user/home-user.component";
+// import { PruebaComponent } from './prueba/prueba.component';
+// import { Prueba1Component } from './components/prueba1/prueba1.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    // ToolbarComponent,
+    ToolbarComponent,
     NavigationComponent,
     RequestComponent,
-    // ToolbarComponent,
-    // SearchTechnicalComponent,
-    // SideNavToolBarComponent,
-    // TechProfileComponent,
-    // ToolbarComponent,
+    ToolbarComponent,
+    SearchTechnicalComponent,
+    SideNavToolBarComponent,
+    TechProfileComponent,
+    ToolbarComponent,
 
     NavigationComponent,
     HomeComponent,
@@ -87,12 +90,14 @@ import {NgOptimizedImage} from "@angular/common";
     ChartComponent,
     EditProfileComponent,
     MyProfileComponent,
-    // ListTaskComponent,
-    // ViewProgressTaskComponent,
+    ListTaskComponent,
+    ViewProgressTaskComponent,
     LoginComponent,
     SignUpComponent,
     PageNotFoundComponent,
-    // HomeUserComponent,
+    HomeUserComponent,
+    // PruebaComponent,
+    // Prueba1Component,
   ],
   imports: [
     BrowserModule,
@@ -152,7 +157,3 @@ import {NgOptimizedImage} from "@angular/common";
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-
-//added dependencies
-// ,MonitortasksService

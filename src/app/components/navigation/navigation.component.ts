@@ -17,4 +17,12 @@ export class NavigationComponent {
       map(result => result.matches),
       shareReplay()
     );
+
+  ngOnInit() {
+    // Verificación en caso de que se pase un valor como @Input desde un componente padre
+  }
+
+  toggleType() {
+    this.type = !this.type; // Alterna el valor de type
+  }
 }
