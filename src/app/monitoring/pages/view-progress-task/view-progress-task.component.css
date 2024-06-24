@@ -1,0 +1,10 @@
+h3 {
+  font-size: 24px; /* Tamaño de la fuente para h3 */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 15px; /* Espacio después del elemento h3 */
+}
+p {
+  font-size: 18px; /* Tamaño de la fuente para p */
+  line-height: 1.5; /* Espaciado entre líneas */
+  margin-bottom: 20px; /* Espacio después del elemento p */
+}
